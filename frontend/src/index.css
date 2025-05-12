@@ -1,0 +1,366 @@
+
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #2a2a72;
+  background-size: 600% 600%;
+  
+}
+
+.dashboard-container {
+  background: #2a2a72;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.dashboard-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+}
+
+
+.table.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.table th, .table td {
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+
+.navbar-dark.bg-dark {
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(10px);
+}
+
+
+.chart-container {
+  position: relative;
+  z-index: 2;
+}
+
+
+.particle-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.particle-bg-dashboard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.glass-card-otp {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.glass-card-dash {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 4000px;
+  width: 100%;
+  height: 500px;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+
+.intro-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+
+.highlight-text {
+  background: linear-gradient(90deg, #80d4ff, #c3a6ff, #ff80bf, #ffd6cc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+
+.fancy-button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+.fancy-button:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.9);
+  color: #2a2a72;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.fancy-button:active {
+  transform: scale(0.95);
+}
+
+
+.fancy-input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  padding: 10px 40px 10px 15px;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.fancy-input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #ff9a8b;
+  box-shadow: 0 0 10px rgba(255, 154, 139, 0.5);
+  outline: none;
+}
+
+.fancy-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.fancy-input.is-invalid {
+  border-color: #dc3545;
+}
+
+
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  padding: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0.7;
+  z-index: 3;
+  font-size: 1.2rem;
+}
+
+.toggle-password:hover {
+  opacity: 1;
+}
+
+
+.toggle-password i {
+  color: #ffffff;
+}
+
+.confirm-password-error {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.25rem;
+  font-weight: bold;
+}
+
+
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+
+.form-label {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.form-label-login {
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.form-text {
+  color: #ffffff;
+  opacity: 0.75;
+  font-size: 0.9rem;
+}
+
+
+
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+
+.footer-text {
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.75;
+  margin-top: 1rem;
+}
+
+.footer-otp {
+  text-align: justify;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+
+.auth-link {
+  text-decoration: none;
+  background: linear-gradient(90deg, #ff9a8b, #e55d87);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+
+
+.home-title {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.home-subtitle {
+  color: #ffffff;
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+.form-title {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+/* Dashboard header styling */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-brand {
+  font-size: 2rem; /* Slightly larger than h2 for prominence */
+  font-weight: bold;
+  margin: 0; /* Remove default margin */
+}
+
+/* Position logout button */
+.logout-button {
+  padding: 10px 20px; /* Slightly smaller than other fancy-buttons */
+  font-size: 1rem;
+}
+
+/* Ensure consistency with left alignment */
+.form-title, .form-label, .form-text, .footer-text {
+  text-align: left;
+}
+
+/* Remove navbar-specific styles if no longer needed */
+.navbar-dark.bg-dark {
+  /* You can remove this if not used elsewhere */
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(10px);
+}
